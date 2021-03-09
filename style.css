@@ -1,0 +1,672 @@
+/****************************************************************** CSS général ******************************************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.conteneur {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reveler {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveler.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Animations */
+
+@keyframes slideInL {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInR {
+    0% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/****************************************************************** Navigation ******************************************************************/
+#Header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+
+#Header .Header {
+    min-height: 6vh;
+    background-color: #eeeeee;
+    margin: 0;
+}
+
+.Header .Menu-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+
+.Header .Menu-nav .Logo {
+    height: auto;
+    width: 12%;
+}
+
+.Header .Menu-nav .Logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.Header .Liste-nav ul{
+    list-style: none;
+    position: absolute;
+    background-color: #a286b1;
+    width: 100vw;
+    height: 100vh;
+    left: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s ease left;
+}
+
+.Header .Liste-nav ul.active {
+    left: 0;
+}
+
+.Header .Liste-nav ul a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
+    text-decoration: none;
+    color: #eeeeee;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+}
+
+.Header .Burger {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.Header .Burger .Bar {
+    height: 6px;
+    width: 35px;
+    position: relative;
+    background-color: #a286b1;
+    transition: all .4s ease;
+}
+
+.Header .Burger .Bar::after,
+.Header .Burger .Bar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #a286b1;
+}
+
+.Header .Burger .Bar::after {
+    top: 10px;
+}
+
+.Header .Burger .Bar::before {
+    bottom: 10px;
+}
+
+.Header .Burger.active .Bar {
+    transform: rotate(135deg);
+    background-color: #eeeeee;
+}
+
+.Header .Burger.active .Bar::before,
+.Header .Burger.active .Bar::after {
+   top: 0;
+   transform: rotate(90deg);
+   background-color: #eeeeee;
+}
+
+
+
+/****************************************************************** Section Accueil ******************************************************************/
+.Accueil {
+    background-color: #eeeeee;
+    height: 100vh;
+    width: 100%;
+    padding-top: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Accueil .Accueil-info {
+    width: 100%;
+    text-align: center;
+    animation: slideInL 2s;
+}
+
+.Accueil .Accueil-info .Accueil-nom {
+    font-size: 3.5rem;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+}
+
+.Accueil .Accueil-info .Accueil-titre {
+    font-size: 5.5rem;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .3rem;   
+    text-transform: uppercase;
+    color: #ffafcc;
+}
+
+.Accueil .Accueil-img {
+    height: auto;
+    width: 45%;
+    margin-top: 10rem;
+    animation: slideInR 2s;
+}
+
+.Accueil .Accueil-img img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/****************************************************************** Section Accueil ******************************************************************/
+.A-propos {
+    width: 100%;
+    height: 100vh;
+    padding: 10rem 5rem;
+    flex-direction: column;
+    background-color: #ffdeeb;
+}
+
+.A-propos .A-propos-info {
+    text-align: center;
+}
+
+.A-propos .A-propos-info .A-propos-titre {
+    font-size: 3rem;
+    padding-top: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: #a286b1;
+}
+
+.A-propos .A-propos-info .A-propos-titre em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.A-propos .A-propos-info .A-propos-texte {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 60px;
+}
+
+.A-propos .A-propos-info .A-propos-bouton {
+    padding: 1rem 2rem;
+    display: inline-block;
+    background-color: #a286b1;
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-top: 30px;
+}
+
+.A-propos .A-propos-img .A-propos-img-wrapper {
+    margin-top: 40px;
+    height: auto;
+    max-width: 220px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.A-propos .A-propos-img .A-propos-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.A-propos .A-propos-img .A-propos-img-wrapper::after {
+    position: absolute;
+    content: '';
+    right: -5em;
+    top: 58%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: #a286b1;
+    z-index: -1;
+    
+}
+
+
+/****************************************************************** Section Projets ******************************************************************/
+.Projets {
+    width: 100%;
+    height: 100%;
+    padding: 10rem 5rem;
+    flex-direction: column;
+}
+
+.Projets .Projets-info {
+    text-align: center;
+}
+
+.Projets .Projets-info .Projets-titre {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: #a2d2ff;
+}
+
+.Projets .Projets-info .Projets-titre em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.Projets .Projets-info .Liste-projet ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.Projets .Projets-info .Liste-projet .Liste-nom {
+    list-style: none;
+    font-size: 1.1rem;
+    color: #a2d2ff;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    line-height: 1.2;
+    transition: all .3s ease;
+}
+
+.Projets .Projets-info .Liste-projet .Liste-nom.active {
+    color: #a8a8a8;
+    border-color: #a8a8a8;
+}
+
+.Projets .Projets-galerie .Projets-img{
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.Projets .Projets-galerie .Projets-img .wrapper .info-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.Projets .Projets-galerie .Projets-img .wrapper .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #00000093;
+}
+
+.Projets .Projets-galerie .Projets-img .wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.Projets .Projets-galerie .Projets-img .Box-item.show {
+    animation: fadeIn .5s ease;
+}
+
+.Projets .Projets-galerie .Projets-img .Box-item.hide {
+    display: none;
+}
+
+.Projets .Projets-galerie .Projets-img .Box-item {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 5px;
+}
+
+.Projets .Projets-galerie .Projets-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;   
+}
+
+
+/****************************************************************** Section Contact ******************************************************************/
+.Contact {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 5rem;
+    background-color: #d9edfe;
+}
+
+.Contact .Contact-info {
+    width: 100%;
+    text-align: center;
+}
+
+.Contact .Contact-info .Contact-titre {
+    font-size: 3.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.Contact .Contact-info .Contact-titre em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.Contact .Contact-info .Contact-texte {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 30px;
+}
+
+.Contact .Contact-info .Contact-img {
+    height: auto;
+    width: 55%;
+    margin: auto;
+}
+
+.Contact .Contact-info .Contact-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.Contact .Contact-sociaux {
+    width: 100%;
+    text-align: center;
+}
+
+.Contact .Contact-sociaux .Email-titre {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: white;
+    margin-top: 4rem;
+}
+
+.Contact .Contact-sociaux .Email {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    letter-spacing: .3rem;
+}
+
+.Contact .Contact-img-sociaux {
+    margin-top: .8rem;
+}
+
+.Contact .Contact-img-sociaux a{
+    text-decoration: none;
+}
+
+.Contact .Contact-img-sociaux a img {
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+
+/****************************************************************** Footer ******************************************************************/
+.PiedPage {
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+.PiedPage .Copyright {
+    font-size: 1.3rem;
+    line-height: 3rem;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+
+/****************************************************************** Version Desktop et tablette ******************************************************************/
+@media only screen and (min-width:768px) {
+    /****************************************************************** Navigation ******************************************************************/
+    .Header .Menu-nav {
+        max-width: 100%;
+    }
+
+    .Header .Burger {
+        display: none;
+    }
+
+    .Header .Menu-nav .Logo {
+        height: auto;
+        width: 70px;
+    }
+
+    .Header .Liste-nav ul {
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    .Header .Liste-nav ul li {
+        display: inline-block;      
+    }
+
+    .Header .Liste-nav ul a {
+        font-size: 2rem;
+        color: #a286b1;
+    }
+
+    .Header .Liste-nav ul a:hover {
+        color: #905faa;
+        border-color: #905faa;
+    }
+
+    .Header .Liste-nav ul a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #905faa;
+        transition: width .3s;
+    }
+
+    .Header .Liste-nav ul a:hover::after {
+        width: 100%;
+    }
+
+
+    /****************************************************************** Accueil ******************************************************************/
+    .Accueil {
+        height: 100vh;
+        flex-direction: row;
+        padding-left: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Accueil .Accueil-info {
+        width: 50%;
+        text-align: left;
+    }
+
+    .Accueil .Accueil-info .Accueil-nom {
+        font-size: 6rem;
+    }
+    
+    .Accueil .Accueil-info .Accueil-titre {
+        font-size: 10rem;
+    }
+
+    .Accueil .Accueil-img {
+        width: 25%;       
+    }
+
+
+    /****************************************************************** À propos ******************************************************************/
+    .A-propos {
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .A-propos .A-propos-info .A-propos-titre {
+        font-size: 6rem;
+        padding-top: 0;
+    }
+
+    .A-propos .A-propos-info .A-propos-texte{
+        text-align: justify;
+        font-size: 20px;
+        margin-top: 18rem;
+        margin-left: 50px;
+    }
+
+    .A-propos .A-propos-img .A-propos-img-wrapper {
+       float: right;
+       margin-right: 5%;
+       margin-left: 5%;
+       margin-top: 0;
+       max-width: 400px;
+    }
+
+    .A-propos .A-propos-info .A-propos-bouton {
+        float: left;
+        margin-left: 50px;
+    }
+
+
+     /****************************************************************** Projets ******************************************************************/
+     .Projets .Projets-info .Projets-titre {
+        font-size: 6rem;
+    }
+
+    .Projets .Projets-info .Liste-projet .Liste-nom {
+        font-size: 2rem;
+    }
+
+    .Projets .Projets-info .Liste-projet .Liste-nom.active {
+        color: #a8a8a8;
+        border-color: #a8a8a8;
+    }
+
+
+    /****************************************************************** Contact ******************************************************************/
+    .Contact {
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .Contact .Contact-info .Contact-titre {
+        font-size: 6rem;
+    }
+
+    .Contact .Contact-info .Contact-texte{
+        text-align: justify;
+        font-size: 20px;
+        margin-left: 50px;
+        margin-top: 5%;
+    }
+
+    .Contact .Contact-info .Contact-img {
+        float: right;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 0;
+        width: 18%;
+    }
+
+    .Contact .Contact-sociaux .Email-titre {
+        margin-top: 0;
+        font-size: 3rem;
+    }
+}

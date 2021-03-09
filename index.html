@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Michelle Joseph</title>
+    <link rel="shortcut icon" href="./images/nmj.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- Carousel avec lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha512-k2WPPrSgRFI6cTaHHhJdc8kAXaRM4JBFEDo1pPGGlYiOyv4vnA0Pp0G5XMYYxgAPmtmv/IIaQA6n5fLAyJaFMA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha512-G3hBdkIeUYJc1flNDPOYlCBoDkllX5f3wyk2BW8vNU9gAobQ8mnOpNC2t3kWxkWSz6aSCJUSqZn/C7Mb9yTbTg==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <section id="Header">
+        <div class="Header container">
+            <div class="Menu-nav">
+                <div class="Logo">
+                    <a href="#Accueil"><img src="./images/nmj.png" alt="Logo"></a>
+                </div>
+                <div class="Liste-nav">
+                    <div class="Burger">
+                        <div class="Bar"></div>
+                    </div>
+                    <ul class="Liste-Section">
+                        <li><a class="Section" href="#Accueil">Accueil</a></li>
+                        <li><a class="Section" href="#A-propos">À propos</a></li>
+                        <li><a class="Section" href="#Projets">Projets</a></li>
+                        <li><a class="Section" href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <!-- Section Accueil -->
+    <section id="Accueil" class="Accueil conteneur">
+        <div class="Accueil-info">
+            <h1 class="Accueil-nom">Nick Michelle Joseph</h1>
+            <p class="Accueil-titre">Portfolio</p>
+        </div>
+        <div class="Accueil-img">
+            <img src="./images/me_web_1.png" alt="Avatar">
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="A-propos" class="A-propos conteneur">
+        <div class="A-propos-info reveler">
+            <h1 class="A-propos-titre">À propos de <em>moi</em></h1>
+            <div class="A-propos-img">
+                <div class="A-propos-img-wrapper">
+                    <img src="./images/projets/perso/nick-michelle-joseph-nicky.jpg" alt="">
+                </div>
+            </div>          
+            <p class="A-propos-texte">Bonjour, je m'appelle Nick Michelle Joseph, mais je préfère Nick ou Nicky. Je suis une étudiante en multimédia au Collège de Maisonneuve. Le monde numérique me passionne beaucoup. J'aime beaucoup tout ce qui concerne le design numérique. Mes centres d'intérêts sont graphisme, la musique, les arts autant sur papier que numérique et la lecture. Travaillante, patiente et motivée, je souhaite continuer mes études en design graphique afin de devenir une spécialiste dans ce domaine.</p>          
+            <a href="./CV_Nick Michelle Joseph.pdf" download="CV_NickMJ" type="button" class="A-propos-bouton">Télécharger mon CV</a>
+        </div>        
+    </section>
+    
+    <!-- Section Projets -->
+    <section id="Projets" class="Projets conteneur">
+        <div class="Projets-info reveler">
+            <h1 class="Projets-titre"><em>Mes</em> Projets</h1>
+            <div class="Liste-projet">
+                <ul>
+                    <li class="Liste-nom active" data-filter="Tout">Tout</li>
+                    <li class="Liste-nom" data-filter="scolaire">Projets scolaires</li>
+                    <li class="Liste-nom" data-filter="personnels">Projets personnels</li>
+                    <li class="Liste-nom" data-filter="comissions">Projets professionnels</li>
+                </ul>
+            </div>
+        </div>
+        <div class="Projets-galerie lightbox_gallery reveler">
+            <div class="Projets-img photo">
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-1.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-1.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Création d'un storyboard pour une idéation de jeu vidéo
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item personnels wrapper">
+                    <a class="Enleve-img" href="./images/projets/perso/nick-michelle-joseph-2.jpg" data-lightbox="photo">
+                        <img src="./images/projets/perso/nick-michelle-joseph-2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Oeuvre personnelle
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item comissions wrapper">
+                    <a class="Enleve-img" href="./images/projets/comission/nick-michelle-joseph-lovesick2.jpg" data-lightbox="photo">
+                        <img src="./images/projets/comission/nick-michelle-joseph-lovesick2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Création d'une image pour une chanson
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-acceuil.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-acceuil.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Design d'interface du portfolio
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item personnels wrapper">
+                    <a class="Enleve-img" href="./images/projets/perso/nick-michelle-joseph-canary.jpg" data-lightbox="photo">
+                        <img src="./images/projets/perso/nick-michelle-joseph-canary.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Oeuvre personnelle
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item comissions wrapper">
+                    <a class="Enleve-img" href="./images/projets/comission/nick-michelle-joseph-miimi.jpg" data-lightbox="photo">
+                        <img src="./images/projets/comission/nick-michelle-joseph-miimi.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Carte d'affaire
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-ecran.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-ecran.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                CV web réalisé avec Photoshop
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item personnels wrapper">
+                    <a class="Enleve-img" href="./images/projets/perso/nick-michelle-joseph-eleven.jpg" data-lightbox="photo">
+                        <img src="./images/projets/perso/nick-michelle-joseph-eleven.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Oeuvre personnelle
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item comissions wrapper">
+                    <a class="Enleve-img" href="./images/projets/comission/nick-michelle-joseph-projet2.jpg" data-lightbox="photo">
+                        <img src="./images/projets/comission/nick-michelle-joseph-projet2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Dessin réalisé pour un client
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-ex-3pts-arnold-v1.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-ex-3pts-arnold-v1.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Ajustement de la luminausité pour montrer l'objet en 3D
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item personnels wrapper">
+                    <a class="Enleve-img" href="./images/projets/perso/nick-michelle-joseph-four.jpg" data-lightbox="photo">
+                        <img src="./images/projets/perso/nick-michelle-joseph-four.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Oeuvre personnelle
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item comissions wrapper">
+                    <a class="Enleve-img" href="./images/projets/comission/nick-michelle-joseph-shape-pll.jpg" data-lightbox="photo">
+                        <img src="./images/projets/comission/nick-michelle-joseph-shape-pll.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Création d'un logo pour une compagnie de vêtement
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-grand-ecran-acceuil.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-grand-ecran-acceuil.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Design d'interface d'un site web déjà existant
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item personnels wrapper">
+                    <a class="Enleve-img" href="./images/projets/perso/nick-michelle-joseph-me.jpg" data-lightbox="photo">
+                        <img src="./images/projets/perso/nick-michelle-joseph-me.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Avatar crée pour mon portfolio
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-image-7.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-image-7.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Dessin fait avec Illustrator
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item personnels wrapper">
+                    <a class="Enleve-img" href="./images/projets/perso/nick-michelle-joseph-nicky.jpg" data-lightbox="photo">
+                        <img src="./images/projets/perso/nick-michelle-joseph-nicky.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Oeuvre personnelle
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <ai d="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-livre.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-livre.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Livre en 3D
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item personnels wrapper">
+                    <a class="Enleve-img" href="./images/projets/perso/nick-michelle-joseph-niickyy2.jpg" data-lightbox="photo">
+                        <img src="./images/projets/perso/nick-michelle-joseph-niickyy2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Oeuvre personnelle
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-manu.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-manu.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Création d'un personnage de jeu vidéo en 3D
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item personnels wrapper">
+                    <a class="Enleve-img" href="./images/projets/perso/nick-michelle-joseph-nine.jpg" data-lightbox="photo">
+                        <img src="./images/projets/perso/nick-michelle-joseph-nine.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Oeuvre personnelle
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-manuelle.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-manuelle.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Création d'un personnage de jeu vidéo en 3D
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item personnels wrapper">
+                    <a class="Enleve-img" href="./images/projets/perso/nick-michelle-joseph-six.jpg" data-lightbox="photo">
+                        <img src="./images/projets/perso/nick-michelle-joseph-six.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Oeuvre personnelle
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-splash-screen-1png-play.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-splash-screen-1png-play.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Concept art d'un jeu vidéo
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item personnels wrapper">
+                    <a class="Enleve-img" href="./images/projets/perso/nick-michelle-joseph-three.jpg" data-lightbox="photo">
+                        <img src="./images/projets/perso/nick-michelle-joseph-three.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Oeuvre personnelle
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-tp1.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-tp1.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Création d'une épée en 3D
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item personnels wrapper">
+                    <a class="Enleve-img" href="./images/projets/perso/nick-michelle-joseph-twelve.jpg" data-lightbox="photo">
+                        <img src="./images/projets/perso/nick-michelle-joseph-twelve.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Oeuvre personnelle
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-vaisseau.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-vaisseau.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Création d'un vaisseau en 3D
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-bonus.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-bonus.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Création d'éléments pour un jeu vidéo
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-ennemi.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-ennemi.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Sprite de jeu vidéo.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-siteweb.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-siteweb.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Création d'un site web pour un programme offert
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Box-item scolaire wrapper">
+                    <a class="Enleve-img" href="./images/projets/scolaire/nick-michelle-joseph-premier-jeu.jpg" data-lightbox="photo">
+                        <img src="./images/projets/scolaire/nick-michelle-joseph-premier-jeu.jpg" alt="">
+                        <div class="overlay">
+                            <div class="info-img">
+                                Premier jeu vidéo en 2D
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="Contact" class="Contact conteneur">
+        <div class="Contact-info reveler">
+            <h1 class="Contact-titre">Contactez-<em>moi</em></h1>
+            <div class="Contact-img">
+                <img src="./images/me_web_2.png" alt="Avatar">
+            </div>
+            <p class="Contact-texte">Si vous êtes intéressé à me contacter, soit pour un projet quelconque, n'hésitez surtout pas ! Contactez-moi avec mon adresse courriel.<br>J'espère pouvoir discuter avec vous !</p>
+        </div>       
+        <div class="Contact-sociaux">
+            <h2 class="Email-titre">Adresse email</h2>
+            <p class="Email">niickyymjj@gmail.com</p>            
+        </div>
+        <div class="Contact-img-sociaux">
+            <a href="https://www.facebook.com/nickmichelle.joseph" target="_blank">
+                <img src="./images/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/nickmichelle-joseph-ab99581b9/" target="_blank">
+                <img  src="./images/linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://nickymj.artstation.com/projects" target="_blank">
+                <img src="./images/artstation.png" alt="artstation">
+            </a>            
+        </div>
+        <div class="PiedPage">
+            <p class="Copyright">&copy; Copyright 2021, Nick Michelle Joseph</p>
+        </div>     
+    </section>
+
+    <!-- Scripts -->
+    <script src="./app.js"></script>
+</body>
+</html>
