@@ -264,6 +264,7 @@ html {
     font-size: 1.5rem;
     line-height: 2rem;
     margin-top: 60px;
+    line-height: 1.6
 }
 
 .A-propos .A-propos-info .A-propos-bouton {
@@ -421,7 +422,7 @@ html {
     flex-direction: column;
     align-items: center;
     padding: 10rem 5rem;
-    background-color: #d9edfe;
+    background-color: #c3e0fc;
 }
 
 .Contact .Contact-info {
@@ -448,6 +449,7 @@ html {
     font-size: 1.5rem;
     line-height: 2rem;
     margin-top: 30px;
+    line-height: 1.6
 }
 
 .Contact .Contact-info .Contact-img {
@@ -479,10 +481,6 @@ html {
     font-size: 1.5rem;
     line-height: 3rem;
     letter-spacing: .3rem;
-}
-
-.Contact .Contact-img-sociaux {
-    margin-top: .8rem;
 }
 
 .Contact .Contact-img-sociaux a{
@@ -603,7 +601,7 @@ html {
 
     .A-propos .A-propos-info .A-propos-texte{
         text-align: justify;
-        font-size: 20px;
+        font-size: 25px;
         margin-top: 18rem;
         margin-left: 50px;
     }
@@ -652,7 +650,7 @@ html {
 
     .Contact .Contact-info .Contact-texte{
         text-align: justify;
-        font-size: 20px;
+        font-size: 25px;
         margin-left: 50px;
         margin-top: 5%;
     }
@@ -667,6 +665,15 @@ html {
 
     .Contact .Contact-sociaux .Email-titre {
         margin-top: 0;
-        font-size: 3rem;
+        font-size: 4rem;
+    }
+
+    .Contact .Contact-sociaux .Email {
+        font-size: 2rem;
+    }
+
+    .Contact .Contact-img-sociaux a img {
+        height: 65px;
+        width: 65px;
     }
 }
