@@ -542,7 +542,7 @@ html {
 
     .A-propos .A-propos-info .A-propos-titre {
         font-size: 4rem;
-        padding-top: 0;
+        padding-top: 10;
     }
 
     .A-propos .A-propos-info .A-propos-texte {
@@ -551,7 +551,6 @@ html {
     }
 
     .A-propos .A-propos-img .A-propos-img-wrapper {
-        /* float: right; */
         margin-right: 5%;
         margin-left: 5%;
         margin-top: 5%;
@@ -708,6 +707,95 @@ html {
 
 
 @media only screen and (min-width:1025px) {
+
+    /****************************************************************** Projets ******************************************************************/
+    .Projets .Projets-info .Projets-titre {
+        font-size: 6rem;
+    }
+
+    .Projets .Projets-info .Liste-projet .Liste-nom {
+        font-size: 2rem;
+    }
+
+    .Projets .Projets-info .Liste-projet .Liste-nom.active {
+        color: #a8a8a8;
+        border-color: #a8a8a8;
+    }
+
+    /****************************************************************** À propos ******************************************************************/
+    .A-propos {
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .A-propos .A-propos-info .A-propos-titre {
+        font-size: 4rem;
+        padding-top: 5rem;
+    }
+
+    .A-propos .A-propos-info .A-propos-texte {
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .A-propos .A-propos-img .A-propos-img-wrapper {
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 5%;
+        max-width: 250px;
+    }
+
+    .A-propos .A-propos-info .A-propos-bouton {
+        font-size: 15px;
+    }
+
+    /****************************************************************** Contact ******************************************************************/
+    .Contact {
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .Contact .Contact-info .Contact-titre {
+        font-size: 6rem;
+        margin-top: 0;
+    }
+
+    .Contact .Contact-info .Contact-texte {
+        text-align: justify;
+        font-size: 25px;
+        margin-left: 50px;
+        margin-top: 5%;
+    }
+
+    .Contact .Contact-info .Contact-img {
+        float: right;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 0;
+        width: 18%;
+    }
+
+    .Contact .Contact-sociaux .Email-titre {
+        margin-top: 0;
+        font-size: 4rem;
+    }
+
+    .Contact .Contact-sociaux .Email {
+        font-size: 2rem;
+    }
+
+    .Contact .Contact-img-sociaux a img {
+        height: 67px;
+        width: 67px;
+    }
+}
+
+
+@media only screen and (min-width:1336px) {
 
     /****************************************************************** Navigation ******************************************************************/
     .Header .Menu-nav {
