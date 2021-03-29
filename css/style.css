@@ -32,12 +32,12 @@ html {
 }
 
 /* Animations */
-
 @keyframes slideInL {
     0% {
         transform: translateX(-500px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0px);
         opacity: 1;
@@ -49,6 +49,7 @@ html {
         transform: translateX(500px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0px);
         opacity: 1;
@@ -56,10 +57,11 @@ html {
 }
 
 @keyframes fadeIn {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -101,7 +103,7 @@ html {
     width: 100%;
 }
 
-.Header .Liste-nav ul{
+.Header .Liste-nav ul {
     list-style: none;
     position: absolute;
     background-color: #a286b1;
@@ -179,9 +181,9 @@ html {
 
 .Header .Burger.active .Bar::before,
 .Header .Burger.active .Bar::after {
-   top: 0;
-   transform: rotate(90deg);
-   background-color: #eeeeee;
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #eeeeee;
 }
 
 
@@ -214,7 +216,7 @@ html {
     font-size: 5.5rem;
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
-    letter-spacing: .3rem;   
+    letter-spacing: .3rem;
     text-transform: uppercase;
     color: #ffafcc;
 }
@@ -291,7 +293,7 @@ html {
 .A-propos .A-propos-img .A-propos-img-wrapper img {
     height: 100%;
     width: 100%;
-    
+
 }
 
 .A-propos .A-propos-img .A-propos-img-wrapper::after {
@@ -304,7 +306,7 @@ html {
     height: 100%;
     background-color: #a286b1;
     z-index: -1;
-    
+
 }
 
 
@@ -334,7 +336,7 @@ html {
     font-weight: bold;
 }
 
-.Projets .Projets-info .Liste-projet ul{
+.Projets .Projets-info .Liste-projet ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,9 +362,10 @@ html {
     border-color: #a8a8a8;
 }
 
-.Projets .Projets-galerie .Projets-img{
+.Projets .Projets-galerie .Projets-img {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .Projets .Projets-galerie .Projets-img .wrapper .info-img {
@@ -407,10 +410,10 @@ html {
     margin: 5px;
 }
 
-.Projets .Projets-galerie .Projets-img img{
+.Projets .Projets-galerie .Projets-img img {
     height: 100%;
     width: 100%;
-    object-fit: cover;   
+    object-fit: cover;
 }
 
 
@@ -483,7 +486,7 @@ html {
     letter-spacing: .3rem;
 }
 
-.Contact .Contact-img-sociaux a{
+.Contact .Contact-img-sociaux a {
     text-decoration: none;
 }
 
@@ -509,7 +512,203 @@ html {
 
 
 /****************************************************************** Version Desktop et tablette ******************************************************************/
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:768px) and (max-width: 1024px){
+
+    /***************************************************************** Navigation *****************************************************************/
+    .Header .Menu-nav .Logo {
+        width: 10%;
+    }
+
+    /****************************************************************** Accueil ******************************************************************/
+    .Accueil .Accueil-info .Accueil-nom {
+        font-size: 6rem;
+    }
+
+    .Accueil .Accueil-info .Accueil-titre {
+        font-size: 10rem;
+    }
+
+    .Accueil .Accueil-img {
+        width: 32%;
+    }
+
+
+    /****************************************************************** À propos ******************************************************************/
+    .A-propos {
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .A-propos .A-propos-info .A-propos-titre {
+        font-size: 4rem;
+        padding-top: 0;
+    }
+
+    .A-propos .A-propos-info .A-propos-texte {
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .A-propos .A-propos-img .A-propos-img-wrapper {
+        /* float: right; */
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 5%;
+        max-width: 250px;
+    }
+
+    .A-propos .A-propos-info .A-propos-bouton {
+        font-size: 15px;
+    }
+
+
+    /****************************************************************** Projets ******************************************************************/
+    .Projets .Projets-info .Projets-titre {
+        font-size: 6rem;
+    }
+
+    .Projets .Projets-info .Liste-projet .Liste-nom {
+        font-size: 2rem;
+    }
+
+    .Projets .Projets-info .Liste-projet .Liste-nom.active {
+        color: #a8a8a8;
+        border-color: #a8a8a8;
+    }
+
+
+    /****************************************************************** Contact ******************************************************************/
+    .Contact .Contact-info .Contact-titre {
+        font-size: 4rem;
+        padding-top: 25px;
+    }
+
+    .Contact .Contact-info .Contact-titre em {
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    .Contact .Contact-info .Contact-texte {
+        font-size: 2rem;
+    }
+
+    .Contact .Contact-info .Contact-img {
+        width: 35%;
+    }
+
+    .Contact .Contact-info .Contact-img img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .Contact .Contact-sociaux {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Contact .Contact-sociaux .Email-titre {
+        font-size: 2.5rem;
+    }
+
+    .Contact .Contact-sociaux .Email {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        letter-spacing: .3rem;
+    }
+
+}
+    
+@media only screen and (min-width:968px) {
+
+        /****************************************************************** Navigation ******************************************************************/
+        .Header .Menu-nav {
+            max-width: 100%;
+        }
+
+        .Header .Burger {
+            display: none;
+        }
+
+        .Header .Menu-nav .Logo {
+            height: auto;
+            width: 70px;
+        }
+
+        .Header .Liste-nav ul {
+            position: initial;
+            display: block;
+            height: auto;
+            width: fit-content;
+            background-color: transparent;
+        }
+
+        .Header .Liste-nav ul li {
+            display: inline-block;
+        }
+
+        .Header .Liste-nav ul a {
+            font-size: 2rem;
+            color: #a286b1;
+        }
+
+        .Header .Liste-nav ul a:hover {
+            color: #905faa;
+            border-color: #905faa;
+        }
+
+        .Header .Liste-nav ul a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #905faa;
+            transition: width .3s;
+        }
+
+        .Header .Liste-nav ul a:hover::after {
+            width: 100%;
+        }
+
+
+        /****************************************************************** Accueil ******************************************************************/
+        .Accueil .Accueil-info .Accueil-nom {
+            font-size: 5.5rem;
+        }
+    
+        .Accueil .Accueil-info .Accueil-titre {
+            font-size: 9.5rem;
+        }
+    
+        .Accueil .Accueil-img {
+            width: 28%;
+        }
+
+        /****************************************************************** Projets ******************************************************************/
+        .Projets .Projets-info .Projets-titre {
+            font-size: 6rem;
+        }
+
+        .Projets .Projets-info .Liste-projet .Liste-nom {
+            font-size: 2rem;
+        }
+
+        .Projets .Projets-info .Liste-projet .Liste-nom.active {
+            color: #a8a8a8;
+            border-color: #a8a8a8;
+        }
+
+
+        /****************************************************************** Contact ******************************************************************/
+    
+        .Contact .Contact-info .Contact-img {
+            width: 28%;
+        }
+}
+
+
+@media only screen and (min-width:1025px) {
+
     /****************************************************************** Navigation ******************************************************************/
     .Header .Menu-nav {
         max-width: 100%;
@@ -533,7 +732,7 @@ html {
     }
 
     .Header .Liste-nav ul li {
-        display: inline-block;      
+        display: inline-block;
     }
 
     .Header .Liste-nav ul a {
@@ -577,13 +776,13 @@ html {
     .Accueil .Accueil-info .Accueil-nom {
         font-size: 6rem;
     }
-    
+
     .Accueil .Accueil-info .Accueil-titre {
         font-size: 10rem;
     }
 
     .Accueil .Accueil-img {
-        width: 25%;       
+        width: 25%;
     }
 
 
@@ -599,7 +798,7 @@ html {
         padding-top: 0;
     }
 
-    .A-propos .A-propos-info .A-propos-texte{
+    .A-propos .A-propos-info .A-propos-texte {
         text-align: justify;
         font-size: 25px;
         margin-top: 18rem;
@@ -607,11 +806,11 @@ html {
     }
 
     .A-propos .A-propos-img .A-propos-img-wrapper {
-       float: right;
-       margin-right: 5%;
-       margin-left: 5%;
-       margin-top: 0;
-       max-width: 400px;
+        float: right;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 0;
+        max-width: 400px;
     }
 
     .A-propos .A-propos-info .A-propos-bouton {
@@ -620,8 +819,8 @@ html {
     }
 
 
-     /****************************************************************** Projets ******************************************************************/
-     .Projets .Projets-info .Projets-titre {
+    /****************************************************************** Projets ******************************************************************/
+    .Projets .Projets-info .Projets-titre {
         font-size: 6rem;
     }
 
@@ -646,9 +845,10 @@ html {
 
     .Contact .Contact-info .Contact-titre {
         font-size: 6rem;
+        margin-top: 0;
     }
 
-    .Contact .Contact-info .Contact-texte{
+    .Contact .Contact-info .Contact-texte {
         text-align: justify;
         font-size: 25px;
         margin-left: 50px;
@@ -673,7 +873,7 @@ html {
     }
 
     .Contact .Contact-img-sociaux a img {
-        height: 65px;
-        width: 65px;
+        height: 67px;
+        width: 67px;
     }
 }
