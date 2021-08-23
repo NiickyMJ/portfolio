@@ -60,16 +60,6 @@
     border-color: #ddd
 }
 
-.lumenbox-control.lumenbox-prev {
-    left: -65px;
-    transform: rotate(135deg) translateY(-50%)
-}
-
-.lumenbox-control.lumenbox-next {
-    right: -65px;
-    transform: rotate(-45deg) translateY(-50%)
-}
-
 .lumenbox-info {
     padding: 10px 0;
     position: absolute;
